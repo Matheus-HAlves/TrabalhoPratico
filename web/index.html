@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Este é o Index</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            *{margin: 0;padding: 0;}
+            body{
+                font-family: arial;
+                font-size: 14px;
+            }
+            .menu{
+                list-style: none;
+                border: 1px solid black;
+                float: left;
+            }
+            .menu li{
+                position:relative; 
+                float:left; 
+                border-right:1px solid black; 
+            }
+            .menu li a{color:black; text-decoration:none; padding:5px 10px; display:block;}
+
+            .menu li a:hover{
+                background:black; 
+                color:white; 
+            }
+            .menu li  ul{
+                position:absolute; 
+                top:25px; 
+                left:0;
+                background-color:#fff; 
+                display:none;
+            }   
+            .menu li:hover ul, .menu li.over ul{display:block;}
+            .menu li ul li{
+                border:1px solid black; 
+                display:block; 
+                width:150px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li><a href="p-quebra-de-linha.html">Quebra de Linha</a></li>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="ancora-pagina1.html">Ancora</a></li>
+                <li><a href="imagem.html">Imagem</a></li>
+                <li><a href="tabela.html">Tabela</a></li>
+                <li><a>Listas</a>
+                    <ul>
+                        <li><a href="restaurante.html">Lista de Definição</a></li>
+                        <li><a href="manual.html">Lista Ordenada</a></li>
+                        <li><a href="lista-curso.html">Lista Sem Odem</a></li>
+                    </ul>
+                </li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="testando-css.html">Teste CSS</a></li>
+                <li><a href="css/seletores.html">Seletores</a></li>
+                <li><a href="livre-dev.html">Livre Desenvolvimento</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>
